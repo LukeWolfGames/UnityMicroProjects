@@ -1,5 +1,6 @@
 # ignore a file type
 .csproj
+.vscode
 .sln
 /Packages/
 /UserSettings/

@@ -5,11 +5,13 @@ using UnityEngine;
 public class Balloon : MonoBehaviour
 {
     public int scoreToGive = 1;
-    public int 
+    public int clicksToPop = 5;
+    public float scaleIncreasePerClick = 0.1f;
 
-    OnMouseDown() 
+    void OnMouseDown ()
     {
+        clicksToPop -= 1;
 
+        transform.localScale += Vector3.one * scaleIncreasePerClick;
     }
-
 }
