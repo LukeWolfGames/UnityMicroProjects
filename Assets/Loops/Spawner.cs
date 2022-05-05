@@ -25,7 +25,10 @@ public class Spawner : MonoBehaviour
     {
         for (int i = 0; i < spawnCount; i++)
         {
-            Instantiate(spawnPrefab, Vector3.zero, Quaternion.identity);
+            float xPos = i * spawnOffset;
+            Vector3 spawnPos = new Vector3(xPos, 0, 0);
+
+            Instantiate(spawnPrefab, spawnPos, Quaternion.identity);
         }
     } 
 }
