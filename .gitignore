@@ -1,0 +1,6 @@
+# ignore a file type
+.csproj
+.sln
+/Packages/
+/UserSettings/
+/Logs/
