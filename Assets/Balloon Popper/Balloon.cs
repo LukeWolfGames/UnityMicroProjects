@@ -14,5 +14,11 @@ public class Balloon : MonoBehaviour
         clicksToPop -= 1;
 
         transform.localScale += Vector3.one * scaleIncreasePerClick;
+
+        if (clicksToPop == 0) 
+        {
+            scoreManager.IncreaseScore(scoreToGive);
+            Destroy(gameObject); // the game object that this script is attached to.
+        }
     }
 }
