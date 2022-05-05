@@ -2,9 +2,14 @@
 .csproj
 .vscode
 .sln
+
+# igore directory
 /Packages/
 /UserSettings/
 /Logs/
+/Library/
+
+# ignore specific file
 Assembly-CSharp.csproj
 Library/AnnotationManager
 Library/ArtifactDB
